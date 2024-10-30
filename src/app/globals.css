@@ -3,19 +3,100 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 255, 255, 255;
+  --foreground: 0, 0, 0;
+  --card: 255, 255, 255;
+  --card-foreground: 0, 0, 0;
+  --popover: 255, 255, 255;
+  --popover-foreground: 0, 0, 0;
+  --primary: 79, 70, 229;
+  --primary-foreground: 255, 255, 255;
+  --secondary: 241, 245, 249;
+  --secondary-foreground: 0, 0, 0;
+  --muted: 241, 245, 249;
+  --muted-foreground: 107, 114, 128;
+  --accent: 241, 245, 249;
+  --accent-foreground: 0, 0, 0;
+  --destructive: 239, 68, 68;
+  --destructive-foreground: 255, 255, 255;
+  --border: 226, 232, 240;
+  --input: 226, 232, 240;
+  --ring: 79, 70, 229;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: 15, 23, 42;
+  --foreground: 255, 255, 255;
+  --card: 30, 41, 59;
+  --card-foreground: 255, 255, 255;
+  --popover: 30, 41, 59;
+  --popover-foreground: 255, 255, 255;
+  --primary: 79, 70, 229;
+  --primary-foreground: 255, 255, 255;
+  --secondary: 51, 65, 85;
+  --secondary-foreground: 255, 255, 255;
+  --muted: 51, 65, 85;
+  --muted-foreground: 148, 163, 184;
+  --accent: 51, 65, 85;
+  --accent-foreground: 255, 255, 255;
+  --destructive: 239, 68, 68;
+  --destructive-foreground: 255, 255, 255;
+  --border: 51, 65, 85;
+  --input: 51, 65, 85;
+  --ring: 79, 70, 229;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-background text-foreground;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255, 255, 255;
+  --foreground: 0, 0, 0;
+  --card: 255, 255, 255;
+  --card-foreground: 0, 0, 0;
+  --popover: 255, 255, 255;
+  --popover-foreground: 0, 0, 0;
+  --primary: 79, 70, 229;
+  --primary-foreground: 255, 255, 255;
+  --secondary: 241, 245, 249;
+  --secondary-foreground: 0, 0, 0;
+  --muted: 241, 245, 249;
+  --muted-foreground: 107, 114, 128;
+  --accent: 241, 245, 249;
+  --accent-foreground: 0, 0, 0;
+  --destructive: 239, 68, 68;
+  --destructive-foreground: 255, 255, 255;
+  --border: 226, 232, 240;
+  --input: 226, 232, 240;
+  --ring: 79, 70, 229;
+}
+
+.dark {
+  --background: 15, 23, 42;
+  --foreground: 255, 255, 255;
+  --card: 30, 41, 59;
+  --card-foreground: 255, 255, 255;
+  --popover: 30, 41, 59;
+  --popover-foreground: 255, 255, 255;
+  --primary: 79, 70, 229;
+  --primary-foreground: 255, 255, 255;
+  --secondary: 51, 65, 85;
+  --secondary-foreground: 255, 255, 255;
+  --muted: 51, 65, 85;
+  --muted-foreground: 148, 163, 184;
+  --accent: 51, 65, 85;
+  --accent-foreground: 255, 255, 255;
+  --destructive: 239, 68, 68;
+  --destructive-foreground: 255, 255, 255;
+  --border: 51, 65, 85;
+  --input: 51, 65, 85;
+  --ring: 79, 70, 229;
+}
+
+body {
+  @apply bg-background text-foreground;
 }
